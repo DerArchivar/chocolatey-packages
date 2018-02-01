@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	<metadata>
+		<id>scenebuilder9</id>
+		<version>9.0.1</version>
+		<packageSourceUrl>https://github.com/DerArchivar/chocolatey-packages</packageSourceUrl>
+		<owners>Der Archivar</owners>
+		<title>Scene Builder 9</title>
+		<authors>Gluon</authors>
+		<projectUrl>http://gluonhq.com/products/scene-builder/</projectUrl>
+		<iconUrl>https://cdn.rawgit.com/DerArchivar/chocolatey-packages/4011e09a/icons/scenebuilder-icon.png</iconUrl>
+		<copyright>© 2018 Gluon</copyright>
+		<licenseUrl>https://opensource.org/licenses/BSD-3-Clause</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<projectSourceUrl>https://bitbucket.org/gluon-oss/scenebuilder</projectSourceUrl>
+		<docsUrl>http://docs.gluonhq.com/scenebuilder/</docsUrl>
+		<bugTrackerUrl>https://bitbucket.org/gluon-oss/scenebuilder/issues</bugTrackerUrl>
+		<tags>jdk java jdk9 java9 scene-builder scenebuilder scene-builder-9 scene-builder9 scenebuilder9 gluon oracle javafx jfx gui</tags>
+		<summary>Gluon Scene Builder is a drag and drop UI designer tool allowing rapid desktop and mobile app development. Scene Builder separates design from logic, allowing team members to quickly and easily focus on their specific aspect of application development.</summary>
+		<description>
+			Gluon Scene Builder is a drag and drop UI designer tool allowing rapid desktop and mobile app development. Scene Builder separates design from logic, allowing team members to quickly and easily focus on their specific aspect of application development.
+
+			Scene Builder works with the JavaFX ecosystem – official controls, community projects, and Gluon offerings including Gluon Mobile, Gluon Desktop, and Gluon CloudLink.
+
+			Scene Builder is open source, and it is freely licensed under the BSD license. Gluon can provide custom consultancy and training, and open source commercial support.
+		</description>
+		<dependencies>
+			<dependency id="jdk9" version="9.0.0.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+		<file src="legal\**" target="legal" />
+	</files>
+</package>
