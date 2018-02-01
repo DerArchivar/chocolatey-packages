@@ -1,36 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>scenebuilder8</id>
-    <version>8.4.1</version>
-    <packageSourceUrl>https://github.com/DerArchivar/chocolatey-packages</packageSourceUrl>
-    <owners>Der Archivar</owners>
-    <title>Scene Builder 8</title>
-    <authors>Gluon</authors>
-    <projectUrl>http://gluonhq.com/products/scene-builder/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/DerArchivar/chocolatey-packages/4011e09a/icons/scenebuilder-icon.png</iconUrl>
-    <copyright>© 2018 Gluon</copyright>
-    <licenseUrl>https://opensource.org/licenses/BSD-3-Clause</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://bitbucket.org/gluon-oss/scenebuilder</projectSourceUrl>
-    <docsUrl>http://docs.gluonhq.com/scenebuilder/</docsUrl>
-    <bugTrackerUrl>https://bitbucket.org/gluon-oss/scenebuilder/issues</bugTrackerUrl>
-    <tags>jre,jdk,java,jre8,jdk8,java8,scene-builder,scenebuilder,gluon</tags>
-    <summary>Gluon Scene Builder is a drag and drop UI designer tool allowing rapid desktop and mobile app development. Scene Builder separates design from logic, allowing team members to quickly and easily focus on their specific aspect of application development.</summary>
-    <description>
-		Gluon Scene Builder is a drag and drop UI designer tool allowing rapid desktop and mobile app development. Scene Builder separates design from logic, allowing team members to quickly and easily focus on their specific aspect of application development.
+	<metadata>
+		<id>scenebuilder8</id>
+		<version>8.4.1</version>
+		<packageSourceUrl>https://github.com/DerArchivar/chocolatey-packages</packageSourceUrl>
+		<owners>Der Archivar</owners>
+		<title>Scene Builder 8</title>
+		<authors>Gluon</authors>
+		<projectUrl>http://gluonhq.com/products/scene-builder/</projectUrl>
+		<iconUrl>https://cdn.rawgit.com/DerArchivar/chocolatey-packages/4011e09a/icons/scenebuilder-icon.png</iconUrl>
+		<copyright>© 2018 Gluon</copyright>
+		<licenseUrl>https://opensource.org/licenses/BSD-3-Clause</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<projectSourceUrl>https://bitbucket.org/gluon-oss/scenebuilder</projectSourceUrl>
+		<docsUrl>http://docs.gluonhq.com/scenebuilder/</docsUrl>
+		<bugTrackerUrl>https://bitbucket.org/gluon-oss/scenebuilder/issues</bugTrackerUrl>
+		<tags>jdk java jre8 jdk8 java8 scene-builder scenebuilder scene-builder-8 scene-builder8 scenebuilder8 gluon oracle javafx jfx gui</tags>
+		<summary>Gluon Scene Builder is a drag and drop UI designer tool allowing rapid desktop and mobile app development. Scene Builder separates design from logic, allowing team members to quickly and easily focus on their specific aspect of application development.</summary>
+		<description>
+			Gluon Scene Builder is a drag and drop UI designer tool allowing rapid desktop and mobile app development. Scene Builder separates design from logic, allowing team members to quickly and easily focus on their specific aspect of application development.
 
-		Scene Builder works with the JavaFX ecosystem – official controls, community projects, and Gluon offerings including Gluon Mobile, Gluon Desktop, and Gluon CloudLink.
+			Scene Builder works with the JavaFX ecosystem – official controls, community projects, and Gluon offerings including Gluon Mobile, Gluon Desktop, and Gluon CloudLink.
 
-		Scene Builder is open source, and it is freely licensed under the BSD license. Gluon can provide custom consultancy and training, and open source commercial support.
-	</description>
-	<dependencies>
-      <dependency id="jdk8" version="8.0.40" />
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-	<file src="legal\**" target="legal" />
-  </files>
+			Scene Builder is open source, and it is freely licensed under the BSD license. Gluon can provide custom consultancy and training, and open source commercial support.
+		</description>
+		<dependencies>
+			<dependency id="jdk8" version="8.0.40" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+		<file src="legal\**" target="legal" />
+	</files>
 </package>
