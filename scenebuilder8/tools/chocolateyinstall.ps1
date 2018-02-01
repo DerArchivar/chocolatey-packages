@@ -1,5 +1,4 @@
 ﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url = 'https://download2.nyc3.digitaloceanspaces.com/scenebuilder/8.4.1/install/windows/x86/SceneBuilder-8.4.1.exe'
 $url64 = 'https://download2.nyc3.digitaloceanspaces.com/scenebuilder/8.4.1/install/windows/x64/SceneBuilder-8.4.1.exe'
 
