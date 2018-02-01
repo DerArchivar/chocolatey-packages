@@ -16,7 +16,7 @@
 		<projectSourceUrl>https://bitbucket.org/gluon-oss/scenebuilder</projectSourceUrl>
 		<docsUrl>http://docs.gluonhq.com/scenebuilder/</docsUrl>
 		<bugTrackerUrl>https://bitbucket.org/gluon-oss/scenebuilder/issues</bugTrackerUrl>
-		<tags>jdk java jre8 jdk8 java8 scene-builder scenebuilder scene-builder-8 scene-builder8 scenebuilder8 gluon oracle javafx jfx gui</tags>
+		<tags>jdk java jdk8 java8 scene-builder scenebuilder scene-builder-8 scene-builder8 scenebuilder8 gluon oracle javafx jfx gui</tags>
 		<summary>Gluon Scene Builder is a drag and drop UI designer tool allowing rapid desktop and mobile app development. Scene Builder separates design from logic, allowing team members to quickly and easily focus on their specific aspect of application development.</summary>
 		<description>
 			Gluon Scene Builder is a drag and drop UI designer tool allowing rapid desktop and mobile app development. Scene Builder separates design from logic, allowing team members to quickly and easily focus on their specific aspect of application development.
