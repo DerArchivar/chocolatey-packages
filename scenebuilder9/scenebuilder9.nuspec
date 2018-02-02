@@ -25,9 +25,6 @@
 
 			Scene Builder is open source, and it is freely licensed under the BSD license. Gluon can provide custom consultancy and training, and open source commercial support.
 		</description>
-		<dependencies>
-			<dependency id="jdk9" version="9.0.0.0" />
-		</dependencies>
 	</metadata>
 	<files>
 		<file src="tools\**" target="tools" />
