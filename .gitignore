@@ -1,0 +1,2 @@
+# The test directory is the only one exclusion, as I'm using it as a permanent reference for packages and don't want it to reside in the remote repository.
+test/
