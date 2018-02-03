@@ -9,7 +9,7 @@
 		<title>Nexus Mod Manager</title>
 		<authors>Black Tree Gaming</authors>
 		<projectUrl>https://www.nexusmods.com/mods/modmanager/</projectUrl>
-		<!-- <iconUrl></iconUrl> -->
+		<iconUrl>https://cdn.rawgit.com/DerArchivar/chocolatey-packages/7c21fef4/icons/nmm-icon.png</iconUrl>
 		<copyright>© 2018 Black Tree Gaming</copyright>
 		<licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
