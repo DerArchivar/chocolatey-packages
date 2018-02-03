@@ -1,0 +1,17 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official download link listed on <https://www.nexusmods.com/mods/modmanager/>
+and can be verified like this:
+
+1. Download the following installers:
+  <https://github.com/Nexus-Mods/Nexus-Mod-Manager/releases/download/0.63.19/Nexus.Mod.Manager-0.63.19.exe>
+  
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum: 8BB19D2F7A7532386D8A2EDAB444ADBCB5D8069B18C86A2781C5242D2758AF64
+  
+File 'LICENSE.txt' is obtained from <http://www.gnu.org/licenses/gpl.html>

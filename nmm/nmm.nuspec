@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	<metadata>
+		<id>nmm</id>
+		<version>0.63.19</version>
+		<packageSourceUrl>https://github.com/DerArchivar/chocolatey-packages</packageSourceUrl>
+		<owners>Der Archivar</owners>
+		<title>Nexus Mod Manager</title>
+		<authors>Black Tree Gaming</authors>
+		<projectUrl>https://www.nexusmods.com/mods/modmanager/</projectUrl>
+		<!-- <iconUrl></iconUrl> -->
+		<copyright>© 2018 Black Tree Gaming</copyright>
+		<licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<projectSourceUrl>https://github.com/Nexus-Mods/Nexus-Mod-Manager/</projectSourceUrl>
+		<bugTrackerUrl>https://github.com/Nexus-Mods/Nexus-Mod-Manager/issues</bugTrackerUrl>
+		<tags>nmm nexus mod mods manager nexusmodmanager nexus-mod-manager modmanager mod-manager nexusmods nexus modding</tags>
+		<summary>The Nexus Mod Manager (NMM) is a free and open source piece of software that allows you to download, install, update and manage your mod files through an easy to use interface. It integrates with the Nexus sites to provide you with a fast, efficient and much less hassled modding experience.</summary>
+		<description>
+			# Nexus Mod Manager
+			The Nexus Mod Manager (NMM) is a free and open source piece of software that allows you to download, install, update and manage your mod files through an easy to use interface. It integrates with the Nexus sites to provide you with a fast, efficient and much less hassled modding experience.
+
+			### Features
+			 - **1-click download, 1-click install**
+
+			   * One click on the site starts your download direct into NMM.
+			   * One click in the manager then installs the file into your game and activates it.
+			   * No faffing about with zip programs, no hassle.
+			   
+			 - **Built in download manager**
+
+			   * The mod manager comes with full download pause and resume functionality.
+			   * Stop your downloads and start them again later from the same place.
+			   * Never receive an incomplete download again.
+				 
+			 - **Mod manager**
+			 
+			   Enable or disable the files you would like loaded into your game through the easy to use mod management system, allowing you to try different configurations and profiles quickly and easily.
+
+			 - **Clean mod installs**
+			 
+			   Files are installed cleanly and if a mod can't finish installing for any reason the mod manager will clean up the files correctly after itself
+			   
+			 - **Open source**
+			 
+			   Completely free and completely open source, released under a copyleft GPL license, you can be sure that the mod manager is safe to use and free of adware, spyware and viruses
+			 
+			 - **No advertising**
+			   
+			   The Mod Manager is completely free of advertisements
+		</description>
+		<releaseNotes>
+			# Release Notes
+			Please be aware that these latest releases are not fully code signed as our certificate has elapsed - so you will need to accept any warnings that Windows throws at you.
+			## 0.63.19
+				#### New features
+				* Added new functionality on the mod's tab right-click context menu where the user can now turn off mod update checks (and automatic mod renames) for specific mods.
+				* NMM will now try to automatically setup Fallout 4's ini for modding. (thanks to user smaitlx1 on Github)
+				* Users can now disable multiple mods at once. (thanks to user Arefu on Github)
+				#### Bugfixes
+				* Remove mod manager column size timer which sometimes results in columns being resized too narrow and not allowing user to expand them. (thanks to user smaitlx1 on Github)
+				* Fixed issue where the UI could become unresponsive while parsing the mod's download date. (thanks to user Xebeth on Github)
+				* Fixed incorrect trimming of UNC paths. (thanks to user Xebeth on Github)
+				* Fixed an infinite loop during the startup UAC checks. (thanks to user Xebeth on Github)
+				* Fixed issue causing the state of the Update Warning and Update Checks toggles to be lost or incorrectly set on newly downloaded mods.
+				* Removed the codesigned uninstaller since the signature was no longer valid.
+		</releaseNotes>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+		<file src="legal\**" target="legal" />
+	</files>
+</package>
