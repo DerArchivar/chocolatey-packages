@@ -1,11 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
-
-if ([Environment]::OSVersion.Version -lt "6.0") {
-	throw "Windows version not supported! On Windows versions before Vista, please install the legacy package by entering 'choco install nmm-legacy'."
-}
-
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Join-Path $toolsDir 'Nexus.Mod.Manager-0.63.19.exe'
+$fileLocation = Join-Path $toolsDir 'Nexus.Mod.Manager-0.64.1.exe'
 
 $packageArgs = @{
 	packageName   = $env:ChocolateyPackageName
@@ -14,7 +9,7 @@ $packageArgs = @{
 
 	softwareName  = 'Nexus Mod Manager'
 
-	checksum      = '8BB19D2F7A7532386D8A2EDAB444ADBCB5D8069B18C86A2781C5242D2758AF64'
+	checksum      = '2B128CBCC8CD5C28C65F5BB6DBA2AD72CFC5E79D8C8C6081012AA310AB92A0D8'
 	checksumType  = 'sha256'
 
 	silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
