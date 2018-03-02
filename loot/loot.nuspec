@@ -9,7 +9,7 @@
 		<title>LOOT: The Load Order Optimisation Tool</title>
 		<authors>WrinklyNinja</authors>
 		<projectUrl>https://loot.github.io/</projectUrl>
-		<!-- <iconUrl></iconUrl> -->
+		<iconUrl>https://cdn.rawgit.com/DerArchivar/chocolatey-packages/a39d0419/icons/loot-icon.png</iconUrl>
 		<copyright>© WrinklyNinja</copyright>
 		<licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
