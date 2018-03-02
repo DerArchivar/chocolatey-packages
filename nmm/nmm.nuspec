@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 	<metadata>
 		<id>nmm</id>
-		<version>0.64.1</version>
+		<version>0.64.2</version>
 		<packageSourceUrl>https://github.com/DerArchivar/chocolatey-packages</packageSourceUrl>
 		<owners>Der Archivar</owners>
 		<title>Nexus Mod Manager</title>
@@ -45,29 +45,16 @@ The Nexus Mod Manager (NMM) is a free and open source piece of software that all
    The Mod Manager is completely free of advertisements
 		</description>
 		<releaseNotes>
-# Note
+## Note
 Please be aware that these latest releases are not fully code signed as our certificate has elapsed - so you will need to accept any warnings that Windows throws at you.
 
-## 0.64.1
+## 0.64.2
 
 #### New features
 * No new feature.
 
 #### Bugfixes
-* Fixed issue causing official plugins to be disabled when using the "Disable all plugins" button on the plugin tab. (thanks to user squid-box on Github)
-* The program will now try to read the unamanaged plugins list from the game's .ccc file. (thanks to user squid-box on Github)
-* Fixed archive invalidation for FO4 and Skyrim SE. (thanks to user ousnius on Github)
-
-## 0.64.0
-
-#### New features
-* NMM is now able to handle large mod files (2GB+) thanks to the new mod archive management using streams instead of loading the whole file into memory. (thanks to user squid-box on Github)
-
-#### Bugfixes
-* Fixed issue preventing users from closing the manager when there was an ongoing mod installation. (thanks to user Arefu on Github)
-* Fixed long-standing issue that caused NMM to be unable to start with a corrupt config file.
-* Fixed an issue that could cause the Virtual config setup to be reset when using a fresh NMM install on an already configured virtual folder.
-* Fixed inconsistencies with the Update checks/warnings management.
+* Fixed mod installation issue. (thanks to user squid-box on Github)
 		</releaseNotes>
 	</metadata>
 	<files>
