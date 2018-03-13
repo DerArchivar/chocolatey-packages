@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 	<metadata>
 		<id>nmm</id>
-		<version>0.64.2</version>
+		<version>0.64.3</version>
 		<packageSourceUrl>https://github.com/DerArchivar/chocolatey-packages</packageSourceUrl>
 		<owners>Der Archivar</owners>
 		<title>Nexus Mod Manager</title>
@@ -48,13 +48,14 @@ The Nexus Mod Manager (NMM) is a free and open source piece of software that all
 ## Note
 Please be aware that these latest releases are not fully code signed as our certificate has elapsed - so you will need to accept any warnings that Windows throws at you.
 
-## 0.64.2
+## 0.64.3
 
 #### New features
 * No new feature.
 
 #### Bugfixes
-* Fixed mod installation issue. (thanks to user squid-box on Github)
+* Fixed download IO performances. (thanks to user mgziminsky on Github)
+* Tweaked game search to only look on fixed drives. (thanks to user mgziminsky on Github)
 		</releaseNotes>
 	</metadata>
 	<files>
