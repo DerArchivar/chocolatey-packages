@@ -9,7 +9,7 @@
 		<title>Hangouts Chat</title>
 		<authors>Google Inc.</authors>
 		<projectUrl>https://gsuite.google.com/products/chat/</projectUrl>
-		<!--<iconUrl></iconUrl>-->
+		<iconUrl>https://cdn.rawgit.com/DerArchivar/chocolatey-packages/407b2c75/icons/hangouts-chat-icon.png</iconUrl>
 		<copyright>© 2018 Google Inc.</copyright>
 		<licenseUrl>https://www.google.com/policies/terms/</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
