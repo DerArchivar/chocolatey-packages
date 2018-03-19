@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 	<metadata>
 		<id>loot</id>
-		<version>0.12.4</version>
+		<version>0.12.5</version>
 		<packageSourceUrl>https://github.com/DerArchivar/chocolatey-packages</packageSourceUrl>
 		<owners>Der Archivar</owners>
 		<title>LOOT: The Load Order Optimisation Tool</title>
@@ -26,170 +26,27 @@ While sorting, LOOT checks for load order errors (such as incompatibilities and 
 While we welcome user feedback, please check the [FAQs](https://loot.github.io/docs/help/LOOT-FAQs.html) in case you have a question that has already been answered. If you wish to report an issue, please read the [How To Report Issues Helpfully](https://loot.github.io/docs/help/How-To-Report-Issues-Helpfully.html) page for instructions.
 		</description>
 		<releaseNotes>
-0.12.4 - 2018-02-22
+0.12.5 - 2018-03-19
 ===================
 
 Fixed
 -----
 
-- Loading or saving a load order could be very slow because the plugins
-  directory was scanned recursively, which is unnecessary. In the reported case,
-  this fix caused saving a load order to go from 23 seconds to 43 milliseconds
-  (via the LOOT API).
-- Plugin parsing errors were being logged with trace severity, they are now
-  logged as errors (via the LOOT API).
-- Chromium console messages are now logged with severity levels that better
-  match the severity with which they appear in the console (via the LOOT API).
-- Saving a load order for Oblivion, Fallout 3 or Fallout: New Vegas now updates
-  plugin access times to the current time for correctness (via the LOOT API).
+- LOOT now checks that its game subdirectories are actually directories, not just that they exist, erroring earlier and more helpfully when there is somehow a file with the same name in the LOOT data directory.
+- Windows 7 users can now update their masterlists again without having to manually enable system-wide TLS 1.2 support. This was an issue after GitHub disabled support for older, insecure versions of TLS encryption because Microsoft didn’t enable TLS 1.2 support in Windows 7 by default. Fixed via the LOOT API.
 
 Changed
 -------
 
-- Added a specific message for sorting errors that mentions plugins.txt probably
-  being read-only, as it&apos;s the most common cause of issues filed.
-- Added missing mentions of Fallout 4 VR support.
-- Performance improvement for load order operations (via the LOOT API).
-- Updated the LOOT API to v0.12.4.
-- Updated spdlog to v0.16.3.
-- Updated nlohmann/json to v3.1.1.
-- Updated CEF to v3.3282.1733.g9091548.
-
-0.12.3 - 2018-02-10
-===================
-
-Fixed
------
-
-- LOOT wouldn&apos;t start when run by a user with a ``%LOCALAPPDATA`` path
-  containing non-ASCII characters, which was a regression introduced in v0.12.0.
-- The log buffer is flushed after every statement, fixing the regression
-  introduced in v0.12.2.
-- The uninstaller didn&apos;t remove ``settings.toml``.
-
-Changed
--------
-
-- Disabled CEF debug logging, as the ``CEFDebugLog.txt`` has generally been more
-  misleading than helpful.
-
-0.12.2 - 2018-02-05
-===================
-
-Added
------
-
-- Support for Fallout 4 VR.
-- Support for configuring games&apos; local paths, i.e. the directory in which their
-  ``plugins.txt`` is stored. Each game entry in LOOT&apos;s ``settings.toml`` now has
-  a ``local_path`` variable that is blank by default, which leaves it up to
-  libloadorder (via the LOOT API) to determine the path. There is no GUI option
-  to configure the value.
-- Chromium console messages are now logged to ``LOOTDebugLog.txt`` to help when
-  debugging.
-
-Changed
--------
-
-- Updated LOOT API to v0.12.3.
-- Replaced Protocol Buffers serialisation dependency with nlohmann/json v2.1.1.
-- Replaced Boost.Log with spdlog v0.14.0.
-- Downgraded Boost to 1.63.0 to take advantage of pre-built binaries on
-  AppVeyor.
-- Updated Japanese translation.
-
-Removed
--------
-
-- The ``--game-appdata-path`` CLI parameter, which set the local path to use for
-  all games, and which has been superceded by game-specific ``local_path``
-  configuration variables.
-
-Fixed
------
-
-- Plugins with a ``.esp`` file extension and the light master flag set are no
-  longer treated as masters when sorting, so they can have other ``.esp`` files
-  as masters without causing cyclic interaction sorting errors (via LOOT API).
-- Sorting didn&apos;t update sidebar indices.
-
-0.12.1 - 2017-12-03
-===================
-
-Fixed
------
-
-- Settings would not save correctly with debug logging disabled.
-- LOOT API logging was disabled on Linux.
-- Typos in the v0.12.0 changelog.
-
-0.12.0 - 2017-12-02
-===================
-
-Added
------
-
-- Support for light master (``.esl``) plugins.
-
-  - Light masters are indicated by a new icon on their plugin cards, and the
-    &quot;Master File&quot; icon is suppressed for light masters.
-  - In the sidebar, light masters all have the in-game load order index ``FE``,
-    followed by the hexadecimal index of the light master relative to only other
-    light masters.
-  - A new general warning message will be displayed when 255 normal plugins and
-    at least one light master are active.
-  - A new error message will be displayed for light masters that depend on a
-    non-master plugin.
-
-- Support for specifying the game local app data path using the
-  ``--game-appdata-path=&lt;path&gt;`` command line parameter.
-- Japanese translation by kuroko137.
-
-Changed
--------
-
-- LOOT now stores its settings in a ``settings.toml`` file instead of a
-  ``settings.yaml`` file. It cannot upgrade from the latter to the former
-  itself, but a converter is available `online`_.
-- &quot;Copy Load Order&quot; now includes a third column for the index of light masters
-  relative to other light masters.
-- Updated the UI to use Polymer v2 and updated LOOT&apos;s custom elements to use the
-  Custom Elements v1 syntax.
-- LOOT API log messages are now included in the ``LOOTDebugLog.txt`` file, and
-  are no longer written to ``LOOTAPIDebugLog.txt``.
-- Updated the Chinese translation.
-- Updated the Danish translation.
-- Updated the Russian translation.
-- Updated the LOOT API to v0.12.1.
-- Updated Lodash to b4.17.4.
-- Updated Octokat to v0.8.0.
-- Updated CEF to v3.3163.1671.g700dc25.
-
-.. _online: https://loot.github.io/convert-settings/
-
-Fixed
------
-
-- Error when adding a Bash Tag with no condition using the metadata editor.
-- Detection of Skyrim and Skyrim SE when LOOT is installed in the same directory
-  as both.
-- General messages disappearing when cancelling a sort.
-- Blank messages&apos; content in the metadata editor after updating the masterlist.
-- LOOT window size/position not restoring maximised state correctly.
-- &quot;Cannot read property of &apos;text&apos; of undefined&quot; error messages when something
-  went wrong.
-- The &quot;new version available&quot; message is no longer displayed for snapshot builds
-  built from code newer than the latest release.
-- Significant fixes in the LOOT API:
-
-  - A crash would occur when loading an plugin that had invalid data past its
-    header. Such plugins are now just silently ignored.
-  - LOOT would not resolve game or local data paths that are junction links
-    correctly, which caused problems later when trying to perform actions such
-    as loading plugins.
-  - Performing a masterlist update on a branch where the remote and local
-    histories had diverged would fail. The existing local branch is now
-    discarded and the remote branch checked out anew, as intended.		</releaseNotes>
+- Migrated all non-Polymer GUI dependencies from Bower to NPM.
+- Refactored GUI JavaScript and custom elements into ES2015 modules.
+- Introduced Webpack to bundle JavaScript and CSS for the GUI.
+- Updated Polymer to v2.5.0.
+- Updated the LOOT API to v0.12.5.
+		</releaseNotes>
+		<dependencies>
+			<dependency id="vcredist2015" />
+		</dependencies>
 	</metadata>
 	<files>
 		<file src="tools\**" target="tools" />
